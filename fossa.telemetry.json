@@ -1,0 +1,137 @@
+{
+  "cliCIEnvironment": null,
+  "cliCommandArgs": [
+    "fossa",
+    "analyze",
+    "--fossa-api-key=<REDACTED>",
+    "--title=fossa-maven-plugin",
+    "--release-group-name=fossa-pilot-synopsys-io-pipeline",
+    "--release-group-release=1.0",
+    "--debug"
+  ],
+  "cliEnvironment": "prod",
+  "cliExitedFatally": true,
+  "cliResolvedConfig": {
+    "cmdConfig": {
+      "baseDir": {
+        "unBaseDir": "/home/ec2-user/fossa-maven-plugin/"
+      },
+      "experimental": {
+        "allowedGradleConfigs": null,
+        "useV3GoResolver": "GoModulesBasedTactic"
+      },
+      "filterSet": {
+        "excludeFilters": {
+          "_combinedPaths": [],
+          "_combinedTargets": []
+        },
+        "includeFilters": {
+          "_combinedPaths": [],
+          "_combinedTargets": []
+        }
+      },
+      "firstPartyScansFlag": "FirstPartyScansUseDefault",
+      "grepOptions": {
+        "customLicenseSearch": [],
+        "keywordSearch": []
+      },
+      "includeAllDeps": {
+        "getFlag": false
+      },
+      "jsonOutput": {
+        "getFlag": false
+      },
+      "noDiscoveryExclusion": {
+        "getFlag": false
+      },
+      "overrideDynamicAnalysis": {
+        "unOverrideDynamicAnalysisBinary": []
+      },
+      "projectRevision": {
+        "projectBranch": null,
+        "projectName": "fossa-maven-plugin",
+        "projectRevision": "2023-09-21T17:22:27Z"
+      },
+      "scanDestination": {
+        "contents": [
+          {
+            "apiKey": "<REDACTED>",
+            "uri": "Nothing"
+          },
+          {
+            "projectJiraKey": null,
+            "projectLabel": [],
+            "projectLink": null,
+            "projectPolicy": null,
+            "projectReleaseGroup": {
+              "releaseGroupName": "fossa-pilot-synopsys-io-pipeline",
+              "releaseGroupRelease": "1.0"
+            },
+            "projectTeam": null,
+            "projectTitle": "fossa-maven-plugin",
+            "projectUrl": null
+          }
+        ],
+        "tag": "UploadScan"
+      },
+      "severity": "debug",
+      "unpackArchives": {
+        "getFlag": false
+      },
+      "vendoredDeps": {
+        "forceRescans": false,
+        "licenseScanMethod": null,
+        "licenseScanPathFilters": null
+      },
+      "vsiOptions": {
+        "binaryDiscoveryEnabled": {
+          "getFlag": false
+        },
+        "dynamicLinkingTarget": {
+          "unDynamicLinkInspect": null
+        },
+        "iatAssertion": {
+          "unIATAssertion": null
+        },
+        "vsiAnalysisEnabled": {
+          "getFlag": false
+        },
+        "vsiSkipSet": {
+          "unVSISkipResolution": []
+        }
+      }
+    },
+    "cmdName": "analyze"
+  },
+  "cliStartedAt": "2023-09-21T17:22:27.123861121Z",
+  "cliSystemInfo": {
+    "systemCapabilities": 1,
+    "systemDistroInfo": "Amazon Linux 2023",
+    "systemInfoArch": "x86_64",
+    "systemInfoOs": "linux",
+    "systemLddVersion": {
+      "Right": "ldd (GNU libc) 2.34\nCopyright (C) 2021 Free Software Foundation, Inc.\nThis is free software; see the source for copying conditions.  There is NO\nwarranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\nWritten by Roland McGrath and Ulrich Drepper.\n"
+    },
+    "systemProcessors": 1,
+    "systemUname": {
+      "Right": "Linux 6.1.49-69.116.amzn2023.x86_64 #1 SMP PREEMPT_DYNAMIC Wed Aug 30 18:09:24 UTC 2023 x86_64\n"
+    }
+  },
+  "cliTelLogs": [
+    {
+      "message": "----------\nFailed\n\n>>> Relevant errors\n\n  Error\n\n    An exception occurred: thread blocked indefinitely in an STM transaction\n\n    Traceback:\n      - fossa-analyze\n\n>>> Possibly-related warnings\n\n  Warning\n\n    >>> Relevant errors\n\n      Error\n\n        Could not find .git directory in the current or any parent directory\n\n        Traceback:\n          - Inferring project from git\n          - Validating configuration\n\n      Error\n\n        Could not find executable: `svn`.\n        Please ensure `svn` exists in PATH prior to running fossa.\n\n        If you believe this to be a defect, please report a bug to FOSSA support at https://support.fossa.com\n\n        Traceback:\n          - Running command 'svn'\n          - Inferring project from SVN\n          - Validating configuration\n\n\n\n",
+      "severity": "error",
+      "ts": "2023-09-21T17:22:27.982192139Z"
+    }
+  ],
+  "cliTelemetryId": "eb4b90d2-ec42-4144-bc60-34ebce4a01da",
+  "cliTimedDurations": [
+    {
+      "computationName": "MavenProjectType",
+      "durationInSeconds": 5.97689e-4
+    }
+  ],
+  "cliTotalDurationInSec": 0.877503219,
+  "cliUsageCounter": {},
+  "cliVersion": "v3.8.11"
+}
